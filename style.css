@@ -1,0 +1,164 @@
+section:not(#three) {
+  height: 400px;
+  margin: 10px 0;
+}
+#one {
+  background-color: rgb(150, 150, 150);
+}
+#two {
+  background-color: rgb(205, 205, 205);
+}
+#three {
+  background-color: rgb(150, 150, 150);
+  width: 400px;
+  margin-bottom: 200px;
+}
+div {
+  width: 90px;
+  height: 90px;
+  border: 3px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#two div {
+  width: 175px;
+}
+#red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+#blue {
+  background-color: blue;
+}
+#orange {
+  background-color: orange;
+}
+#purple {
+  background-color: purple;
+}
+#brown {
+  background-color: brown;
+}
+p {
+  margin: 0;
+  background-color: #0c2340;
+  border: 2px solid #ae9142;
+  font-size: 30px;
+  color: #c99700;
+  text-align: center;
+}
+p:nth-of-type(even) {
+  color: #00843d;
+}
+
+/* START BELOW THIS LINE */
+/* 1. Select the element (AKA Dark Grey box) with the Red, Green, and Blue squares in it and apply the CSS style that will convert it into a Flex/Flexbox container (If this is done correctly, then the Red, Green, and Blue squares will display in a row in the upper left.) */
+/* 2. Using a flexbox CSS property, move the three boxes to the upper right corner of the container (AKA Dark Grey box) */
+
+/* 3. Using another flexbox CSS property, change the main axis for this Flex/Flexbox container from the x (AKA Horizontal) to the y axis (AKA vertical axis). (If this is done correctly, then the Red, Green, and Blue squares will display stacked above each other in the lower left corner of the container.) */
+
+/* 4. Using another flexbox CSS property, move the three boxes to the right so they are centered horizontally inside the container (AKA Dark Grey box) */
+
+#one{
+    display: flex;
+    justify-content:flex-top;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/* 5. Select the element (AKA Light Grey box) with the Orange, Purple, and Brown rectangles in it and apply the CSS style that will convert it into a Flex/Flexbox container (If this is done correctly, then the Orange, Purple, and Brown squares will display in a row in the upper left part of the light grey box.) */
+
+/* 6. Using a flexbox CSS property, move the three boxes down so they are centered vertically inside the container (AKA Light Grey box) */
+
+/* 7. Using another flexbox CSS property, spread the three boxes out horizontally so the Orange box stays where it is, the Purple box is centered horizontally, and the Brown box is right up against the right edge of the container (AKA Light Grey box). */
+
+/* 8. Using another flexbox CSS property, have the Brown box move down to another line when the width of the Chrome window is no longer large enough to display all three boxes (Orange, Purple, and Brown) at their current widths. */
+
+#two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 9. Select the element with the “p-one”, “p-two”, etc paragraph elements inside it and apply the CSS style that will convert it into a CSS Grid container. */
+
+/* 10. Using one of the CSS Grid properties as well as FR to give the CSS Grid container four equal columns. */
+
+/* 11. Using another CSS Grid property, set all rows in this Grid to 100px height. */
+
+#three{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    
+}
+
+/* Pictures below are what the webpage should like after you have completed the entire Pre-Bonus section of this exercise… */
+
+
+/* BONUS CHALLENGES */
+
+/* 1. Select the first container (AKA Dark Grey box) again. Have the Red, Green, and Blue boxes display in the opposite order (Ex: Blue, Green, Red) and start from the top of the container. (Complete this with a single line of CSS inside the curly brackets). */
+
+/* 2. Change the order of the elements in the second container (AKA Light Grey box) so that Brown is first, then Orange, and then Purple. */
+
+#brown{
+    order: -1;
+    align-self: flex-start;
+}
+
+#purple{
+    align-self: flex-end;
+}
+
+/* 3. In the second container (AKA Light Grey box), move the Brown box to the upper left corner and move the Purple box to the bottom right corner. (Orange box will remain in the center). */
+
+
+/* 4. Have the CSS Grid at the bottom of the page display like the below image shows. */
+
+#p-one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#p-two{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#p-three{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#p-four{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#p-five{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+#p-six{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#p-eight{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+
+/* When finished, create a repository in the “FlexboxGridExercise” Folder as well as on GitHub. Add and commit everything in the FlexboxGridExercise folder and push it up to your GitHub repository. Then paste the link to your GitHub repository page in the form. */
