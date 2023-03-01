@@ -68,7 +68,7 @@ p:nth-of-type(even) {
 
 #one{
     display: flex;
-    justify-content:flex-top;
+    justify-content:flex-end;
     flex-direction: column-reverse;
     align-items: center;
 }
